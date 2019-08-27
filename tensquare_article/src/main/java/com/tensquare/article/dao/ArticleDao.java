@@ -19,7 +19,7 @@ public interface ArticleDao extends JpaRepository<Article,String>,JpaSpecificati
 
 
     /**
-     * 修改一下
+     * 修改一下代码
      * @param id
      */
     @Modifying
