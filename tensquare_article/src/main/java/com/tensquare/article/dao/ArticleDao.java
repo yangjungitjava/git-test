@@ -18,7 +18,10 @@ public interface ArticleDao extends JpaRepository<Article,String>,JpaSpecificati
     public void updateState(String id);
 
 
-
+    /**
+     * 修改一下
+     * @param id
+     */
     @Modifying
     @Query(value = "UPDATE tb_article set thumbup=thumbup+1 where id=?",nativeQuery = true)
     public void addThumbup(String id);
